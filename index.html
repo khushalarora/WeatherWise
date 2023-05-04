@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORECASTIFY</title>
+    <link href="assets/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <video id="bg-video" src="assets/clear-sky.webm" autoplay muted loop></video>
+    <div id="navbar">
+        <img id="logo" src="assets/logo.png" alt="logo">
+        <div class="navbar-item" id="location">-</div>
+        <form id="my-form">
+            <input id="city-name" type="text" name="City Name" required placeholder="Enter City Name">
+            <button id="search-btn" type="submit">Search</button>
+        </form>
+    </div>
+    <div id="content">
+        <div id="weather-card">
+            <div id="flex-item1">
+                <img id="weather-icon" src="assets/weather-icon.webp" alt="weather icon">
+                <h1 id="temperature">
+                    -<sup>°C</sup>
+                </h1>
+            </div>
+            <div id="flex-item2">
+                <div id="feels-like">
+                    <div class="feels-like">
+                        Feels Like
+                    </div>
+                    <div id="feels-like-value">
+                        -
+                    </div>
+                </div>
+                <div id="cloud-cover">
+                    <div class="cloud-cover">
+                        Cloud Cover
+                    </div>
+                    <div id="cloud-cover-value">
+                        -
+                    </div>
+                </div>
+            </div>
+            <div id="flex-item3">
+                <div id="wind-speed">
+                    <div class="wind-speed">
+                        Wind Speed
+                    </div>
+                    <div id="wind-speed-value">
+                        -
+                    </div>
+                </div>
+                <div id="humidity">
+                    <div class="humidity">
+                        Humidity
+                    </div>
+                    <div id="humidity-value">
+                        -
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    background-color: black;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: black;
+    width: 100%;
+    height: 12vh;
+}
+
+
+#logo {
+    width: 20%;
+    margin: 0.5% 0;
+}
+
+#location {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    border: 0.2vw solid gold;
+    border-radius: 5px;
+    margin: 0.3% 1%;
+    padding: 0.5%;
+    font-size: 1vw;
+    text-align: center;
+}
+
+#navbar form {
+    margin: 0 0% 0 auto;
+    width: 24vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#city-name {
+    padding: 1%;
+    border: 1px solid gold;
+    font-size: 1vw;
+    text-align: center;
+    margin-right: 2%;
+}
+
+#search-btn {
+    background-color: #77c8ff;
+    padding: 2%;
+    font-size: 1vw;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+#content {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#weather-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px 1px white;
+    border: 0.5px solid white;
+    width: 55%;
+
+}
+
+
+#weather-icon {
+    width: 15%;
+    margin-right: 2%;
+    filter: brightness(1) contrast(3);
+}
+
+#temperature {
+    font-size: 5vw;
+    font-family: 'Lato', sans-serif;
+}
+
+#flex-item2,
+#flex-item3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+#flex-item1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+
+}
+
+#feels-like,
+#cloud-cover,
+#wind-speed,
+#humidity {
+    width: 50%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+.feels-like,
+#feels-like-value,
+.cloud-cover,
+#cloud-cover-value,
+.wind-speed,
+#wind-speed-value,
+.humidity,
+#humidity-value {
+    font-family: 'Bruno Ace SC', cursive;
+    margin: 0 5%;
+}
+
+.feels-like,
+.wind-speed,
+.cloud-cover,
+.humidity {
+    margin-right: auto;
+}
