@@ -10,7 +10,7 @@ myForm.addEventListener('submit', function (event) {
 
 
 function getTemp(city) {
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`)
     .then(response => response.json())
     .then(response => {
         updateData(response);
